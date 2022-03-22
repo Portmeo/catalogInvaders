@@ -20,7 +20,7 @@ function getDataCSV() {
 }
 
 function decodeScore(numericaSystem, score) {
-    const calScore = score.split('').reduce((acc, curr) =>  acc + numericaSystem.indexOf(curr).toString(), 0);
+    const calScore = score.split('').reduce((acc, curr) =>  acc + numericaSystem.indexOf(curr).toString(), '');
     return parseInt(calScore, numericaSystem.length);
 }
 
